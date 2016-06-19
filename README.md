@@ -10,6 +10,7 @@ PsTools and GPInventory are required for full functionality.
 A Microsoft SQL database with a table named 'pcnames' and two columns 'username' and 'pcname', with username being the primary unique key.
 
 
+
 ----------
 2015.4.20
 Added Tools -> System Tools -> Remote Command Line (Brings up an interactive dos command line on remote pc)
