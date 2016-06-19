@@ -1,0 +1,110 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DomainCommander.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="pcListPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\mh-fileserver\ids$\kwalker\pcNameList\</Value>
+    </Setting>
+    <Setting Name="OU" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="finalDomainComponent" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com</Value>
+    </Setting>
+    <Setting Name="pcNamesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=AKA-ITSUPPORT\DOMAINCOMMANDER;Initial Catalog=IDSpcNames;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=AKA-ITSUPPORT\DOMAINCOMMANDER;Initial Catalog=IDSpcNames;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="cshare" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c$</Value>
+    </Setting>
+    <Setting Name="dshare" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d$</Value>
+    </Setting>
+    <Setting Name="eshare" Type="System.String" Scope="User">
+      <Value Profile="(Default)">e$</Value>
+    </Setting>
+    <Setting Name="mailServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mail.akaheadstart.org</Value>
+    </Setting>
+    <Setting Name="desktopLocations" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\adm-fs\redirect\&lt;/string&gt;
+  &lt;string&gt;\\adm-fs\redirect2\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="documentsLocations" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\\adm-fs\redirect\&lt;/string&gt;
+  &lt;string&gt;\\adm-fs\redirect2\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="domain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">headstart</Value>
+    </Setting>
+    <Setting Name="disabledUsersOU" Type="System.String" Scope="User">
+      <Value Profile="(Default)">OU=Disabled Accounts,DC=headstart,DC=admin</Value>
+    </Setting>
+    <Setting Name="terminateEmailList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;helpdesk@akaheadstart.org&lt;/string&gt;
+  &lt;string&gt;phigginson@akaheadstart.org&lt;/string&gt;
+  &lt;string&gt;itspecialists@akaheadstart.org&lt;/string&gt;
+  &lt;string&gt;hr@akaheadstart.org&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ADLocations" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Admin&lt;/string&gt;
+  &lt;string&gt;CasaDeOro&lt;/string&gt;
+  &lt;string&gt;Darnall&lt;/string&gt;
+  &lt;string&gt;Farragut&lt;/string&gt;
+  &lt;string&gt;Granada&lt;/string&gt;
+  &lt;string&gt;Grand&lt;/string&gt;
+  &lt;string&gt;LaMesa&lt;/string&gt;
+  &lt;string&gt;Marilla&lt;/string&gt;
+  &lt;string&gt;Redwood&lt;/string&gt;
+  &lt;string&gt;Rolando&lt;/string&gt;
+  &lt;string&gt;SanMartin&lt;/string&gt;
+  &lt;string&gt;SanMiguel&lt;/string&gt;
+  &lt;string&gt;SpringStreet&lt;/string&gt;
+  &lt;string&gt;VistaLaMesa&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ADTitles" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Teachers&lt;/string&gt;
+  &lt;string&gt;Teachers Assistants&lt;/string&gt;
+  &lt;string&gt;IT Specialists&lt;/string&gt;
+  &lt;string&gt;Custodians&lt;/string&gt;
+  &lt;string&gt;Executive Assistants&lt;/string&gt;
+  &lt;string&gt;Facilities Technicians&lt;/string&gt;
+  &lt;string&gt;FCC Supervisors&lt;/string&gt;
+  &lt;string&gt;FSAs&lt;/string&gt;
+  &lt;string&gt;Home Visitors&lt;/string&gt;
+  &lt;string&gt;Office Assistants&lt;/string&gt;
+  &lt;string&gt;Procurement Specialists&lt;/string&gt;
+  &lt;string&gt;Program Specialists&lt;/string&gt;
+  &lt;string&gt;Temporary Employees&lt;/string&gt;
+  &lt;string&gt;Directors&lt;/string&gt;
+  &lt;string&gt;CenterDirectors&lt;/string&gt;
+  &lt;string&gt;Executive Directors&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="IntranetSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://insite.accuvant.com</Value>
+    </Setting>
+    <Setting Name="WebSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.accuvant.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

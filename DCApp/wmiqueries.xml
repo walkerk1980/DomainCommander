@@ -1,0 +1,32 @@
+<?xml version="1.0" ?> 
+<Query>
+<ManagedObjects> 
+<ManagedObject Name="RSOP: Installed Apps (Computer Policy)" Query="select name from RSOP_ApplicationManagementPolicySetting" SortBy="name" Root="ComputerRSOP"/>
+<ManagedObject Name="RSOP: Installed Apps (User Policy)" Query="select name from RSOP_ApplicationManagementPolicySetting where EntryType=1" SortBy="name" Root="UserRSOP"/>
+<ManagedObject Name="RSOP: Removed Apps (Computer Policy)" Query="select name from RSOP_ApplicationManagementPolicySetting where EntryType=2" SortBy="name" Root="ComputerRSOP"/>
+<ManagedObject Name="RSOP: Removed Apps (User Policy)" Query="select name from RSOP_ApplicationManagementPolicySetting where EntryType=2" SortBy="name" Root="UserRSOP"/>
+<ManagedObject Name="RSOP: GPOs applied to computer" Query="select name,version from RSOP_GPO where accessDenied='false' and enabled='true' and filterAllowed='true' and not version='0'" SortBy="name" Root="ComputerRSOP"/>
+<ManagedObject Name="RSOP: GPOs applied to user" Query="select name,version from RSOP_GPO where accessDenied='false' and enabled='true' and filterAllowed='true' and not version='0'" SortBy="name" Root="UserRSOP"/>
+<ManagedObject Name="RSOP: Folder Redirection" Query="select name,resultantPath from RSOP_FolderRedirectionPolicySetting" SortBy="name" Root="UserRSOP"/>
+<ManagedObject Name="RSOP: Installed Apps (Computer Policy), GPOID" Query="select name,GPOID from RSOP_ApplicationManagementPolicySetting" SortBy="name" Root="ComputerRSOP"/>
+<ManagedObject Name="RSOP: Installed Apps (User Policy), GPOID" Query="select name,GPOID from RSOP_ApplicationManagementPolicySetting" SortBy="name" Root="UserRSOP"/>
+<ManagedObject Name="WMI: Logged on user" Query="select UserName from Win32_ComputerSystem"/>
+<ManagedObject Name="WMI: Operating System" Query="Select Caption from Win32_OperatingSystem" />
+<ManagedObject Name="WMI: Service Pack" Query="Select ServicePackMajorVersion from Win32_OperatingSystem" />
+<ManagedObject Name="WMI: Processor Name" Query="select Name from Win32_Processor"/>
+<ManagedObject Name="WMI: Processor Speed" Query="select CurrentClockSpeed from Win32_Processor"/>
+<ManagedObject Name="WMI: Computer Memory" Query="select TotalPhysicalMemory from Win32_ComputerSystem"/>
+<ManagedObject Name="WMI: Computer Manufacturer" Query="select Manufacturer from Win32_ComputerSystem"/>
+<ManagedObject Name="WMI: Computer Model" Query="select Model from Win32_ComputerSystem"/>
+<ManagedObject Name="WMI: Display Adapter" Query="select Caption from Win32_DisplayConfiguration"/>
+<ManagedObject Name="WMI: Display Resolution" Query="select PelsWidth,PelsHeight from Win32_DisplayConfiguration"/>
+<ManagedObject Name="WMI: Display Frequency" Query="select DisplayFrequency from Win32_DisplayConfiguration"/>
+<ManagedObject Name="WMI: Hotfixes" Query="select HotFixID from Win32_QuickFixEngineering" SortBy="HotFixID" />
+<ManagedObject Name="WMI: Applications installed by Windows Installer" Query="select Name from win32_product" SortBy="Name" />
+<ManagedObject Name="WMI: Shares" Query="select Name from Win32_share" />
+<ManagedObject Name="WMI: Startup Programs" Query="select Caption from Win32_StartupCommand" SortBy="Caption" />
+<ManagedObject Name="WMI: Disk Space" Query="Select Caption,FileSystem,FreeSpace,Size From Win32_LogicalDisk  Where DriveType=3" />
+<ManagedObject Name="WMI: Printers" Query="select Name from Win32_PrinterConfiguration"/>
+<ManagedObject Name="WMI: Network Adapters" Query="select Name,AdapterType,MACAddress from Win32_NetworkAdapter"/>
+</ManagedObjects> 
+</Query>
