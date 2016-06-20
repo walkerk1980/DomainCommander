@@ -7,7 +7,7 @@ Replace all Placeholder files with the respective files from the download links 
 
 PsTools and GPInventory are required for full functionality.
 
-A Microsoft SQL database with a table named 'pcnames' and two columns 'username' and 'pcname', with username being the primary unique key.
+A Microsoft SQL database with a table named 'pcnames' and three columns 'usr_id' (int32), 'username' (string) and 'pcname' (string), with usr_id being the primary unique key.
 
 
 
